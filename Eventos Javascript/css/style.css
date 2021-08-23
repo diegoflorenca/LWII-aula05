@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #5e44a3;
+  font: normal 18pt arial;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#principal {
+  background: #2a8b2a;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+
+.altera {
+  transform: scale(2) rotate(-25deg);
+}

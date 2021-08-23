@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	/* essa parte reseta as margens internas e externas de todos os elementos da página*/
+}
+html, body{
+	height: 100%;
+	/* permite que os elementos seja centralizados verticalmente, assim o navegador sabe que a página possui 100% de altura */
+}
+body{
+	color:#24633f;
+	background: #7ef3b1;
+	font:normal 16pt sans-serif;
+	/* Vamos usar o conceito de flexbox para aligar os elementos no centro da página, para isso usamos o display:flex para habilitar essa opção,
+	em seguida alinhamos os elementos na vertical e na horizontal com os comandos align-items e justify-content, por fim mudamos a orientação 
+	dos elementos para coluna com o flex-direction, já que o padrão do flexbox é em linha. */
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.wrapper{
+	width:50%;
+	margin:15px 0;
+	background: #ff8e85;
+	/* Nesta parte estamos usando o display grid para criar uma grade que nos permita alinhar os elementos da forma que quisermos.*/
+	display:grid;
+	/* depois de habilitar o grid com o comendo display, podemos colocar 3 elementos um ao lado do outro usando o comando auto repetido 3 vezes. 
+	se quiséssemos 4 basta colocar auto mais uma vez, e assim por diante. */
+	grid-template-columns: auto auto auto;
+}
+
+button{
+	color:#FFF;
+	background: #a94e46;
+	border:none;
+	font-size:22pt;
+	font-weight: bold;
+	padding:15px;
+	margin:10px;
+	border-radius: 5px;
+}
+button:hover{
+	background: #cc7870;
+	
+}
+/* classe que será usada para mudar a cor do botão clicado, essa classe será inserida pelo JavaScript */
+.clicado{
+	background:#54130d;
+}
+
+/* classe que será usada para mudar a cor do h2 quando for a última tentativa, essa classe também será inserida pelo JavaScript */
+.ultimaChance{
+	color:#a94e46;
+}
